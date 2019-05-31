@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
+        navigationItem.title = "Streamer"
+        self.tabBarController?.navigationItem.title = "Streamer"
         navigationController?.navigationBar.barTintColor = UIColor.black
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
